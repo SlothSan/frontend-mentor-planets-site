@@ -30,7 +30,35 @@
     color: $text-white;
   }
 
-  .active-link {
+  .active-mercury {
     border-top: 3px solid $active-blue;
+  }
+
+  .active-venus {
+    border-top: 3px solid $active-orange
+  }
+
+  .active-earth {
+    border-top: 3px solid $active-purple
+  }
+
+  .active-mars {
+    border-top: 3px solid $active-red
+  }
+
+  .active-jupiter {
+    border-top: 3px solid $active-deep-red
+  }
+
+  .active-saturn {
+    border-top: 3px solid $active-brown;
+  }
+
+  .active-uranus {
+    border-top: 3px solid $active-teal;
+  }
+
+  .active-neptune {
+    border-top: 3px solid $active-dark-blue;
   }
 }
