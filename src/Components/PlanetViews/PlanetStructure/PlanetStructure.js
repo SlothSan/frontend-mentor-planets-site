@@ -1,6 +1,6 @@
 const PlanetStructure = () => {
  return (
-     <h1>Structure</h1>
+     <h1>Structure placeholder</h1>
  )
 }
 
