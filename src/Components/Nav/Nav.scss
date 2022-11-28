@@ -21,12 +21,13 @@
     height: 100%;
     padding: 28px 0;
     margin: 0 25px;
+    font-family: 'Spartan', sans-serif;
   }
 
   .nav-planet-link:hover {
     color: $text-white;
   }
-  
+
   .active-link {
     border-top: 3px solid $active-blue;
   }

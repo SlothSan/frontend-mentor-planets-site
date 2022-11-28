@@ -19,6 +19,18 @@
     .planet-text-container {
       width: 50%;
       color: $text-white;
+
+      .planet-name {
+        font-family: 'Antonio', sans-serif;
+      }
+
+      .planet-text, .source-text {
+        font-family: 'Spartan', sans-serif;
+      }
+
+      .planet-link {
+        font-family: '';
+      }
     }
   }
 

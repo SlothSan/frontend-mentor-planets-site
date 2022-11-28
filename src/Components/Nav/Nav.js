@@ -8,6 +8,7 @@ const Nav = () => {
     const location = useLocation();
 
     useEffect(() => {
+        //TODO fix the path on load to display as mercury
         setPath(location.pathname);
     }, [location])
 
