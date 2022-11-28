@@ -7,6 +7,9 @@
   .planet-top-container {
     display: flex;
     padding: 100px;
+    .active {
+      background-color: blue;
+    }
   }
   .planet-bottom-container {
     display: flex;

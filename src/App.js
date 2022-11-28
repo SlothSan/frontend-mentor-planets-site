@@ -3,6 +3,7 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Data from "./Assets/data/data.json";
 import Nav from "./Components/Nav/Nav";
 import Planet from "./Components/Planet/Planet";
+import PlanetOverview from "./Components/Planet/PlanetOverview/PlanetOverview";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
             <Nav />
             <Routes>
                 <Route path={"/"} element={<Planet data={Data[0]}/>}/>
-                <Route path={"/mercury"} element={<Planet data={Data[0]}/>} />
+                <Route path={"/mercury/overview"} element={<Planet data={Data[0]}<PlanetOverview/>} />
                 <Route path={"/venus"} element={<Planet data={Data[1]}/>} />
                 <Route path={"/earth"} element={<Planet data={Data[2]}/>} />
                 <Route path={"/mars"} element={<Planet data={Data[3]}/>} />

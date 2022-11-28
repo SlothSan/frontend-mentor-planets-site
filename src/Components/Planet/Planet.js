@@ -1,6 +1,5 @@
 import {useEffect, useState} from "react";
 import './Planet.css';
-import planet from "./Planet";
 import PlanetOverview from "./PlanetOverview/PlanetOverview";
 import PlanetStructure from "./PlanetStructure/PlanetStructure";
 
@@ -16,7 +15,6 @@ const Planet = (props) => {
 
     const handleClickView = (event) => {
         setViewSelected(event.target.value)
-        console.log(viewSelected)
     }
 
 
@@ -28,9 +26,9 @@ const Planet = (props) => {
         <div className={"planet-container"}>
             { console.log(planetData) }
             {viewSelected === "overview" ?
-                <PlanetOverview data={planetData} handleClickView={handleClickView}/>  : ""}
+                <PlanetOverview data={planetData} handleClickView={handleClickView} viewSelected={viewSelected}/>  : ""}
             {viewSelected === "structure" ?
-                <PlanetStructure data={planetData} handleClickView={handleClickView}/> : ""}
+                <PlanetStructure data={planetData} handleClickView={handleClickView} viewSelected={viewSelected}/> : ""}
 
             <div className={"planet-bottom-container"}>
                 <div className={"information-container"}>

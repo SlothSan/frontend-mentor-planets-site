@@ -9,9 +9,9 @@ const PlanetStructure = (props) => {
                 <p className={"planet-description"}>{props.data ? props.data.structure.content : ""}</p>
                 <p className={"planet-source"}></p>
                 <div>
-                    <button value={"overview"} onClick={props.handleClickView}>OVERVIEW</button>
-                    <button value={"structure"} onClick={props.handleClickView}>INTERNAL STRUCTURE</button>
-                    <button value={"geology"}>SURFACE GEOLOGY</button>
+                    <button className={"link-button"} value={"overview"} onClick={props.handleClickView}>OVERVIEW</button>
+                    <button className={"active link-button"} value={"structure"} onClick={props.handleClickView}>INTERNAL STRUCTURE</button>
+                    <button className={"link-button"} value={"geology"}>SURFACE GEOLOGY</button>
                 </div>
             </div>
         </div>
