@@ -8,7 +8,7 @@ const Nav = () => {
                 <h1 className={"nav-title"}>THE PLANETS</h1>
             </div>
             <div>
-                <Link className={"nav-planet-link"} to={"/mercury/overview"}>MERCURY</Link>
+                <Link className={"nav-planet-link"} to={"/mercury"}>MERCURY</Link>
                 <Link className={"nav-planet-link"} to={"/venus"}>VENUS</Link>
                 <Link className={"nav-planet-link"} to={"/earth"}>EARTH</Link>
                 <Link className={"nav-planet-link"} to={"/mars"}>MARS</Link>
