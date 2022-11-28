@@ -7,7 +7,7 @@ const PlanetOverview = (props) => {
                      alt={`Image of ${props.planetData.name} overview`}/>
             </div>
             <div className={"planet-text-container"}>
-                <p className={"planet-name"}>{props.planetData.name}</p>
+                <p className={"planet-name"}>{props.planetData.name.toUpperCase()}</p>
                 <p className={"planet-text"}>{props.planetData.overview.content}</p>
                 <p className={"source-text"}>Source : <a href={props.planetData.overview.source}>Wikipedia <img
                     src={"../imgs/icon-source.svg"}

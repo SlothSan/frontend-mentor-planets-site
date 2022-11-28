@@ -19,9 +19,11 @@
     text-decoration: none;
     color: $light-gray;
     height: 100%;
-    padding: 28px 0;
+    padding: 34px 0;
     margin: 0 25px;
-    font-family: 'Spartan', sans-serif;
+    font-size: 0.8rem;
+    line-height: 25px;
+    font-family: 'League Spartan', sans-serif;
   }
 
   .nav-planet-link:hover {
