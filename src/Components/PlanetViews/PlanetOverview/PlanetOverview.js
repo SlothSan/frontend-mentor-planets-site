@@ -1,6 +1,9 @@
-const PlanetOverview = () => {
+const PlanetOverview = (props) => {
     return (
-        <h1>Overview placeholder</h1>
+        <div>
+            <h1>Overview placeholder</h1>
+            <p>{props.planetData.name}</p>
+        </div>
     )
 }
 

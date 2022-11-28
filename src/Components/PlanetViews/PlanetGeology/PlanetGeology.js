@@ -1,6 +1,10 @@
-const PlanetGeology = () => {
+const PlanetGeology = (props) => {
     return (
-        <h1>Planet Geology</h1>
+        <div>
+            <h1>Planet Geology</h1>
+            <p>{props.planetData.name}</p>
+        </div>
+
     )
 }
 
