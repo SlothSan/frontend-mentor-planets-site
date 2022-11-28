@@ -1,6 +1,8 @@
 import {useEffect, useState} from "react";
 import './Planet.css';
 import planet from "./Planet";
+import PlanetOverview from "./PlanetOverview/PlanetOverview";
+import PlanetStructure from "./PlanetStructure/PlanetStructure";
 
 const Planet = (props) => {
 
@@ -24,26 +26,12 @@ const Planet = (props) => {
 
     return (
         <div className={"planet-container"}>
-            {planetData ? console.log(planetData) : ""}
-            <div className={"planet-top-container"}>
-                <div>
-                    {viewSelected === "overview" || viewSelected === "geology" ?
-                        <img src={planetData ? planetData.images.planet : ""}/>  :
-                        viewSelected === "structure" ? <img src={planetData ? planetData.images.internal : ""} /> : ""}
-                    {viewSelected === "geology" ? <img src={planetData ? planetData.images.geology : ""}/> : ""}
+            { console.log(planetData) }
+            {viewSelected === "overview" ?
+                <PlanetOverview data={planetData} handleClickView={handleClickView}/>  : ""}
+            {viewSelected === "structure" ?
+                <PlanetStructure data={planetData} handleClickView={handleClickView}/> : ""}
 
-                </div>
-                <div>
-                    <p className={"planet-name"}>{planetData ? planetData.name : ""}</p>
-                    <p className={"planet-description"}>{planetData ? planetData.overview.content : ""}</p>
-                    <p className={"planet-source"}>Source : <a href={planetData ? planetData.overview.source : ""}>Wikipedia <img src={"./imgs/icon-source.svg"}/></a></p>
-                    <div>
-                        <button value={"overview"} onClick={handleClickView}>OVERVIEW</button>
-                        <button value={"structure"} onClick={handleClickView}>INTERNAL STRUCTURE</button>
-                        <button value={"geology"} onClick={handleClickView}>SURFACE GEOLOGY</button>
-                    </div>
-                </div>
-            </div>
             <div className={"planet-bottom-container"}>
                 <div className={"information-container"}>
                     <p>ROTATION TIME</p>
