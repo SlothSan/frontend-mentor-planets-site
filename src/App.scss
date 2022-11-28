@@ -11,4 +11,6 @@
   display: flex;
   background-color: $background-blue;
   background-image: url("Assets/imgs/background-stars.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
