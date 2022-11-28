@@ -11,12 +11,13 @@
 
     .planet-image-container {
       width: 70%;
+      min-height: 666px;
       display: flex;
       align-items: center;
       justify-content: center;
       max-height: 666px;
       max-width: 666px;
-      margin-right: 100px;
+      margin-right: 200px;
     }
 
     .planet-text-container {
@@ -44,5 +45,29 @@
 
   .info-container {
     display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+
+    .info-card {
+      width: 255px;
+      height: 128px;
+      border: 2px solid $dark-gray;
+      border-radius: 5px;
+      padding: 25px;
+      color: $text-white;
+
+      .info-title {
+        font-family: 'League Spartan', sans-serif;
+        color: $light-gray;
+        font-size: 1rem;
+        line-height: 25px;
+        font-weight: bold;
+      }
+
+      .info-text {
+        font-family: 'Antonio', sans-serif;
+        font-size: 2.5rem;
+      }
+    }
   }
 }
