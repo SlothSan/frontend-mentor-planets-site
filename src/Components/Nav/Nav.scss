@@ -1,21 +1,33 @@
-@import "../../SharedStyling";
+@import "../../Styles/SharedStyling";
 
 .desktop-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 40px;
+  padding: 20px 40px;
   width: 100%;
-  height: 50px;
+  height: auto;
   font-family: 'Antonio', sans-serif;
   border-bottom: 1px solid $light-gray;
+
   .nav-title {
-    color:$text-white;
+    color: $text-white;
     font-size: 2rem;
   }
+
   .nav-planet-link {
     text-decoration: none;
     color: $light-gray;
-    padding: 0 25px;
+    height: 100%;
+    padding: 28px 0;
+    margin: 0 25px;
+  }
+
+  .nav-planet-link:hover {
+    color: $text-white;
+  }
+  
+  .active-link {
+    border-top: 3px solid $active-blue;
   }
 }
