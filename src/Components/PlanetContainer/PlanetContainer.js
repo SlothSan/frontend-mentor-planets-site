@@ -10,7 +10,7 @@ const PlanetContainer = (props) => {
 
     return (
         <section>
-            <section className={props.menuOpen ? "mobile-nav" : "hidden"}>
+            <section className={props.menuOpen ? "mobile-nav" : "hidden-menu mobile-nav"}>
                 <Link className={"nav-link-mobile"}
                       onClick={handleClick}
                       to={"/mercury/overview"}>MERCURY</Link>

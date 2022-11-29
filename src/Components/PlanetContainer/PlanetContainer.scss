@@ -1,5 +1,9 @@
 @import '../../Styles/SharedStyling';
 
+.mobile-nav {
+  display: none;
+}
+
 .planet-container {
   width: 100%;
   height: 100%;
@@ -151,6 +155,7 @@
     width: 100%;
     margin: 0 auto;
     justify-content: center;
+    margin-bottom: 50px;
 
     .info-card-container {
       display: flex;
@@ -285,7 +290,9 @@
       }
     }
   }
-
+  .mobile-nav {
+    display: none;
+  }
 }
 
 @media(max-width: 750px) {
@@ -294,7 +301,7 @@
     flex-direction: column;
   }
 
-  .hidden {
+  .hidden-menu {
     display: none;
   }
 }
