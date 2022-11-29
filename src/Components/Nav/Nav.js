@@ -18,7 +18,7 @@ const Nav = () => {
             <div>
                 <h1 className={"nav-title"}>THE PLANETS</h1>
             </div>
-            <div>
+            <div className={"nav-link-container"}>
                 <Link className={path.includes('mercury') ? "active-mercury nav-planet-link" : "nav-planet-link"}
                       to={"/mercury/overview"}>MERCURY</Link>
                 <Link className={path.includes('venus') ? "active-venus nav-planet-link" : "nav-planet-link"}

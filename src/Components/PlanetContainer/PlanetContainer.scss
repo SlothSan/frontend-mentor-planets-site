@@ -166,5 +166,9 @@
         font-size: 2.5rem;
       }
     }
+
+    .info-card:last-of-type {
+      margin-right: 0;
+    }
   }
 }
