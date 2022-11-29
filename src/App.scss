@@ -1,4 +1,4 @@
-@import "SharedStyling";
+@import "./Styles/SharedStyling";
 
 #root {
   width: 100%;
@@ -14,4 +14,5 @@
   background-image: url("Assets/imgs/background-stars.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
