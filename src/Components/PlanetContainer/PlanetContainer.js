@@ -1,5 +1,6 @@
 import {Link, Outlet} from "react-router-dom";
 import './PlanetContainer.css'
+import Chevron from '../../Assets/imgs/icon-chevron.svg'
 
 const PlanetContainer = (props) => {
 
@@ -13,7 +14,15 @@ const PlanetContainer = (props) => {
             <section className={props.menuOpen ? "mobile-nav" : "hidden-menu mobile-nav"}>
                 <Link className={"nav-link-mobile"}
                       onClick={handleClick}
-                      to={"/mercury/overview"}>MERCURY</Link>
+                      to={"/mercury/overview"}>
+                    <div className={"left-container"}>
+                        <div className={"mercury-icon"}></div>
+                        MERCURY
+                    </div>
+                    <div className={"right-container"}>
+                        <img src={Chevron} alt={"chevron icon"}/>
+                    </div>
+                </Link>
                 <Link className={"nav-link-mobile"}
                       onClick={handleClick}
                       to={"/venus/overview"}>VENUS</Link>

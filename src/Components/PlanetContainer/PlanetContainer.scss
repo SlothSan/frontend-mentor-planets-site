@@ -1,5 +1,13 @@
 @import '../../Styles/SharedStyling';
 
+@mixin icon-sizing {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+
 .mobile-nav {
   display: none;
 }
@@ -300,6 +308,36 @@
     display: flex;
     flex-direction: column;
     min-height: 580px;
+    font-family: "League Spartan", sans-serif;
+  }
+
+  .mercury-icon {
+    background-color: $mercury-icon;
+    @include icon-sizing;
+  }
+
+  .nav-link-mobile {
+    display: flex;
+    height: 73px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    line-height: 25px;
+    color: $text-white;
+    margin: 0 30px;
+    border-bottom: 1px solid $dark-gray;
+
+
+    .left-container {
+      display: flex;
+    }
+
+    .right-container {
+      img {
+        height: 10px;
+        width: 10px;
+      }
+    }
   }
 
   .hidden-menu {
