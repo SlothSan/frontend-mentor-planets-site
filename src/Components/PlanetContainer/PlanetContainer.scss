@@ -172,3 +172,63 @@
     }
   }
 }
+
+@media (max-width: 1200px) {
+  .planet-container {
+    flex-direction: column;
+
+    .planet-sub-container {
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 0;
+
+      .planet-image-container {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          max-height: 300px;
+        }
+
+        max-width: 100%;
+        min-height: 300px;
+        margin: 100px 0 50px 0;
+      }
+
+      .planet-text-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+
+        .planet-info-container {
+          width: 275px;
+
+          .planet-name {
+            font-size: 2rem;
+          }
+
+          .planet-text, .source-text {
+            width: auto;
+            height: auto;
+            font-size: 0.7rem;
+          }
+
+          .source-text {
+            margin-top: 10px;
+          }
+        }
+
+        .internal-link {
+          width: 275px;
+        }
+
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
