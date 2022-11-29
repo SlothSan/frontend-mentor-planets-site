@@ -7,6 +7,7 @@
   .internal-link-container {
     display: flex;
     flex-direction: column;
+    width: 350px;
 
     span {
       font-size: 1rem;
@@ -14,6 +15,8 @@
     }
 
     .internal-link {
+      width: 350px;
+      height: 48px;
       text-decoration: none;
       font-family: "League Spartan", sans-serif;
       font-size: 1rem;
@@ -61,6 +64,7 @@
 
       .source-text {
         color: $light-gray;
+        height: auto;
       }
 
       .source-link {
@@ -78,6 +82,11 @@
     display: flex;
     justify-content: space-between;
     padding: 0 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto 20px auto;
+    width: 100%;
 
     .info-card {
       width: 255px;
