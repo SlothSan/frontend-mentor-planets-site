@@ -25,25 +25,81 @@ const PlanetContainer = (props) => {
                 </Link>
                 <Link className={"nav-link-mobile"}
                       onClick={handleClick}
-                      to={"/venus/overview"}>VENUS</Link>
+                      to={"/venus/overview"}>
+                    <div className={"left-container"}>
+                        <div className={"venus-icon"}></div>
+                        VENUS
+                    </div>
+                    <div className={"right-container"}>
+                        <img src={Chevron} alt={"chevron icon"}/>
+                    </div>
+                </Link>
                 <Link className={"nav-link-mobile"}
                       onClick={handleClick}
-                      to={"/earth/overview"}>EARTH</Link>
+                      to={"/earth/overview"}>
+                    <div className={"left-container"}>
+                        <div className={"earth-icon"}></div>
+                        EARTH
+                    </div>
+                    <div className={"right-container"}>
+                        <img src={Chevron} alt={"chevron icon"}/>
+                    </div>
+                </Link>
                 <Link className={"nav-link-mobile"}
                       onClick={handleClick}
-                      to={"/mars/overview"}>MARS</Link>
+                      to={"/mars/overview"}>
+                    <div className={"left-container"}>
+                        <div className={"mars-icon"}></div>
+                        MARS
+                    </div>
+                    <div className={"right-container"}>
+                        <img src={Chevron} alt={"chevron icon"}/>
+                    </div>
+                </Link>
                 <Link className={"nav-link-mobile"}
                       onClick={handleClick}
-                      to={"/jupiter/overview"}>JUPITER</Link>
+                      to={"/jupiter/overview"}>
+                    <div className={"left-container"}>
+                        <div className={"jupiter-icon"}></div>
+                        JUPITER
+                    </div>
+                    <div className={"right-container"}>
+                        <img src={Chevron} alt={"chevron icon"}/>
+                    </div>
+                </Link>
                 <Link className={"nav-link-mobile"}
                       onClick={handleClick}
-                      to={"/saturn/overview"}>SATURN</Link>
+                      to={"/saturn/overview"}>
+                    <div className={"left-container"}>
+                        <div className={"saturn-icon"}></div>
+                        SATURN
+                    </div>
+                    <div className={"right-container"}>
+                        <img src={Chevron} alt={"chevron icon"}/>
+                    </div>
+                </Link>
                 <Link className={"nav-link-mobile"}
                       onClick={handleClick}
-                      to={"/uranus/overview"}>URANUS</Link>
+                      to={"/uranus/overview"}>
+                    <div className={"left-container"}>
+                        <div className={"uranus-icon"}></div>
+                        URANUS
+                    </div>
+                    <div className={"right-container"}>
+                        <img src={Chevron} alt={"chevron icon"}/>
+                    </div>
+                </Link>
                 <Link className={"nav-link-mobile"}
                       onClick={handleClick}
-                      to={"/neptune/overview"}>NEPTUNE</Link>
+                      to={"/neptune/overview"}>
+                    <div className={"left-container"}>
+                        <div className={"neptune-icon"}></div>
+                        NEPTUNE
+                    </div>
+                    <div className={"right-container"}>
+                        <img src={Chevron} alt={"chevron icon"}/>
+                    </div>
+                </Link>
             </section>
             <section className={props.menuOpen ? "hidden" : "planet-container"}>
                 <Outlet/>

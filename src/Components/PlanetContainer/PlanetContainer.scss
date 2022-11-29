@@ -316,9 +316,44 @@
     @include icon-sizing;
   }
 
+  .venus-icon {
+    background-color: $venus-icon;
+    @include icon-sizing;
+  }
+
+  .earth-icon {
+    background-color: $earth-icon;
+    @include icon-sizing;
+  }
+
+  .mars-icon {
+    background-color: $mars-icon;
+    @include icon-sizing;
+  }
+
+  .jupiter-icon {
+    background-color: $jupiter-icon;
+    @include icon-sizing;
+  }
+
+  .saturn-icon {
+    background-color: $saturn-icon;
+    @include icon-sizing;
+  }
+
+  .uranus-icon {
+    background-color: $uranus-icon;
+    @include icon-sizing;
+  }
+
+  .neptune-icon {
+    background-color: $neptune-icon;
+    @include icon-sizing;
+  }
+
   .nav-link-mobile {
     display: flex;
-    height: 73px;
+    height: 70px;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
@@ -338,6 +373,10 @@
         width: 10px;
       }
     }
+  }
+
+  .nav-link-mobile:last-of-type {
+    border-bottom: none;
   }
 
   .hidden-menu {
