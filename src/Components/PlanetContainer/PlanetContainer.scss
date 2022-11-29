@@ -4,6 +4,23 @@
   width: 100%;
   height: 100%;
 
+  .internal-link-container {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 1rem;
+      font-family: "League Spartan", sans-serif;
+    }
+
+    .internal-link {
+      text-decoration: none;
+      font-family: "League Spartan", sans-serif;
+      font-size: 1rem;
+    }
+  }
+
+
   .planet-sub-container {
     display: flex;
     width: 100%;
@@ -11,13 +28,14 @@
 
     .planet-image-container {
       width: 70%;
-      min-height: 666px;
       display: flex;
       align-items: center;
       justify-content: center;
       max-height: 666px;
       max-width: 666px;
       margin-right: 200px;
+      margin-top: 5px;
+      position: relative;
     }
 
     .planet-text-container {
@@ -39,6 +57,19 @@
         line-height: 25px;
         font-weight: lighter;
         font-size: 1rem;
+      }
+
+      .source-text {
+        color: $light-gray;
+      }
+
+      .source-link {
+        text-decoration: underline;
+        color: $light-gray;
+
+        img {
+          margin-left: 10px;
+        }
       }
     }
   }
