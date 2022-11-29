@@ -10,7 +10,7 @@ import {useEffect, useState} from "react";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
-    const [menuOpen, setMenuOpen] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
     const [mercuryData, setMercuryData] = useState();
     const [venusData, setVenusData] = useState();
     const [earthData, setEarthData] = useState();
