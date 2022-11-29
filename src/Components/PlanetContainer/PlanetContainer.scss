@@ -78,13 +78,23 @@
     .planet-image-container {
       width: 100%;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      min-width: 666px;
+      min-height: 666px;
       max-height: 666px;
       max-width: 666px;
-      margin-right: 20%;
+      margin-right: 10%;
       margin-top: 5px;
       position: relative;
+
+      .geology-image {
+        position: absolute;
+        bottom: 50px;
+        max-width: 163px;
+        max-height: 199px;
+      }
     }
 
     .planet-text-container {
@@ -99,7 +109,7 @@
       }
 
       .planet-text, .source-text {
-        margin-top: 40px;
+        margin-top: 30px;
         width: 350px;
         height: 150px;
         font-family: 'League Spartan', sans-serif;
@@ -126,13 +136,13 @@
 
   .info-container {
     display: flex;
-    justify-content: space-between;
-    padding: 0 100px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto 20px auto;
     width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+
+    .info-card-container {
+      display: flex;
+    }
 
     .info-card {
       width: 255px;
@@ -141,6 +151,7 @@
       border-radius: 5px;
       padding: 25px;
       color: $text-white;
+      margin-right: 70px;
 
       .info-title {
         font-family: 'League Spartan', sans-serif;
