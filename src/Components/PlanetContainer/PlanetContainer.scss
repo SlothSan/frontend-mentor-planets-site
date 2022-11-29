@@ -38,34 +38,42 @@
 
     .mercury-active {
       background-color: $active-blue;
+      border: none;
     }
 
     .venus-active {
       background-color: $active-orange;
+      border: none;
     }
 
     .earth-active {
       background-color: $active-purple;
+      border: none;
     }
 
     .mars-active {
       background-color: $active-red;
+      border: none;
     }
 
     .jupiter-active {
       background-color: $active-deep-red;
+      border: none;
     }
 
     .saturn-active {
       background-color: $active-brown;
+      border: none;
     }
 
     .uranus-active {
       background-color: $active-teal;
+      border: none;
     }
 
     .neptune-active {
       background-color: $active-dark-blue;
+      border: none;
     }
   }
 
@@ -166,5 +174,112 @@
         font-size: 2.5rem;
       }
     }
+
+    .info-card:last-of-type {
+      margin-right: 0;
+    }
   }
+}
+
+@media (max-width: 1200px) {
+  .planet-container {
+    flex-direction: column;
+
+    .planet-sub-container {
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 0;
+
+      .planet-image-container {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          max-height: 300px;
+        }
+
+        .geology-image {
+          max-height: 150px;
+          max-width: 150px;
+          top: 200px;
+        }
+
+        max-width: 100%;
+        min-height: 300px;
+        margin: 100px 0 50px 0;
+      }
+
+      .planet-text-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 30px;
+        height: 268px;
+
+        .planet-info-container {
+          width: 325px;
+          margin-right: 75px;
+
+          .planet-name {
+            font-size: 2rem;
+          }
+
+          .planet-text, .source-text {
+            width: auto;
+            height: auto;
+            font-size: 0.8rem;
+            line-height: 22px;
+          }
+
+          .source-text {
+            margin-top: 30px;
+          }
+        }
+
+        .internal-link {
+          width: 325px;
+          margin-top: 15px;
+        }
+
+        p {
+          margin-top: 10px;
+        }
+
+      }
+    }
+
+    .info-container {
+      margin-top: 5%;
+      padding: 0 20px;
+      width: 100%;
+      justify-content: space-around;
+
+      .info-card {
+        width: 164px;
+        height: 88px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        margin-right: 20px;
+
+        .info-title {
+          font-size: 0.8rem;
+          line-height: 16px;
+        }
+
+        .info-text {
+          margin-top: 30px;
+          font-size: 1.8rem;
+          line-height: 0;
+        }
+      }
+
+      .info-card:last-of-type {
+        margin-right: 0px;
+      }
+    }
+  }
+
 }

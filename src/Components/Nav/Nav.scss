@@ -62,3 +62,14 @@
     border-top: 3px solid $active-dark-blue;
   }
 }
+
+@media (max-width: 1200px) {
+  .desktop-nav {
+    flex-direction: column;
+    justify-content: center;
+
+    .nav-link-container {
+      margin-top: 40px;
+    }
+  }
+}
