@@ -38,34 +38,42 @@
 
     .mercury-active {
       background-color: $active-blue;
+      border: none;
     }
 
     .venus-active {
       background-color: $active-orange;
+      border: none;
     }
 
     .earth-active {
       background-color: $active-purple;
+      border: none;
     }
 
     .mars-active {
       background-color: $active-red;
+      border: none;
     }
 
     .jupiter-active {
       background-color: $active-deep-red;
+      border: none;
     }
 
     .saturn-active {
       background-color: $active-brown;
+      border: none;
     }
 
     .uranus-active {
       background-color: $active-teal;
+      border: none;
     }
 
     .neptune-active {
       background-color: $active-dark-blue;
+      border: none;
     }
   }
 
@@ -193,6 +201,12 @@
           max-height: 300px;
         }
 
+        .geology-image {
+          max-height: 150px;
+          max-width: 150px;
+          top: 200px;
+        }
+
         max-width: 100%;
         min-height: 300px;
         margin: 100px 0 50px 0;
@@ -202,6 +216,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         padding: 0 30px;
+        height: 268px;
 
         .planet-info-container {
           width: 325px;
@@ -236,7 +251,7 @@
     }
 
     .info-container {
-      margin-top: 7%;
+      margin-top: 5%;
       padding: 0 20px;
       width: 100%;
       justify-content: space-around;
