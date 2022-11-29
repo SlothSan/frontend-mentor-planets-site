@@ -1,11 +1,16 @@
 import {Link, useLocation} from "react-router-dom";
 import './Nav.css';
+import Logo from '../../Assets/imgs/icon-hamburger.svg'
 import {useEffect, useState} from "react";
 
-const Nav = () => {
+const Nav = (props) => {
     const [path, setPath] = useState('');
 
     const location = useLocation();
+
+    const handleMenuClick = () => {
+        props.setMenuOpen(!props.menuOpen)
+    }
 
     useEffect(() => {
         //TODO fix the path on load to display as mercury
@@ -18,7 +23,7 @@ const Nav = () => {
             <div>
                 <h1 className={"nav-title"}>THE PLANETS</h1>
             </div>
-            <div className={"nav-link-container"}>
+            <div className={"nav-link-container hidden"}>
                 <Link className={path.includes('mercury') ? "active-mercury nav-planet-link" : "nav-planet-link"}
                       to={"/mercury/overview"}>MERCURY</Link>
                 <Link className={path.includes('venus') ? "active-venus nav-planet-link" : "nav-planet-link"}
@@ -35,6 +40,9 @@ const Nav = () => {
                       to={"/uranus/overview"}>URANUS</Link>
                 <Link className={path.includes('neptune') ? "active-neptune nav-planet-link" : "nav-planet-link"}
                       to={"/neptune/overview"}>NEPTUNE</Link>
+            </div>
+            <div className={"menu-container"}>
+                <img className={props.menuOpen ? "logo disabled" : "logo"} src={Logo} alt={"hamburger menu icon"}/>
             </div>
         </nav>
     )

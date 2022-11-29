@@ -4,6 +4,10 @@
   width: 100%;
   height: 100%;
 
+  .mobile-nav {
+    display: none;
+  }
+
   .internal-link-container {
     display: flex;
     flex-direction: column;
@@ -282,4 +286,15 @@
     }
   }
 
+}
+
+@media(max-width: 750px) {
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  /* TODO REMOVE AFTER TESTING CHABGE TO HIDDEN ON PROP CHANGE */
+  .planet-container {
+    display: none;
+  }
 }

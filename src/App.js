@@ -10,6 +10,7 @@ import {useEffect, useState} from "react";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(true);
     const [mercuryData, setMercuryData] = useState();
     const [venusData, setVenusData] = useState();
     const [earthData, setEarthData] = useState();
@@ -33,7 +34,7 @@ function App() {
     return (
         <div className="App">
             {isLoading === true ? '' : <BrowserRouter>
-                <Nav/>
+                <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
                 <Routes>
                     <Route path={"*"} element={<PlanetContainer planetData={mercuryData}/>}>
                         <Route path={"*"} element={<PlanetOverview planetData={mercuryData}/>}/>

@@ -61,6 +61,10 @@
   .active-neptune {
     border-top: 3px solid $active-dark-blue;
   }
+
+  .menu-container {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -71,5 +75,26 @@
     .nav-link-container {
       margin-top: 40px;
     }
+
+    .menu-container {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .desktop-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu-container {
+    display: flex !important;
+  }
+
+  .logo {
+    margin-top: 10px;
+  }
+  .hidden {
+    display: none;
   }
 }
