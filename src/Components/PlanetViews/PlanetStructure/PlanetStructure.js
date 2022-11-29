@@ -5,7 +5,7 @@ const PlanetStructure = (props) => {
         <div className={"planet-sub-container"}>
             <div className={"planet-image-container"}>
                 <img className={"planet-image"} src={props.planetData.images.internal}
-                     alt={`Image of ${props.planetData.name} overview`}/>
+                     alt={`${props.planetData.name} structure`}/>
             </div>
             <div className={"planet-text-container"}>
                 <p className={"planet-name"}>{props.planetData.name.toUpperCase()}</p>
