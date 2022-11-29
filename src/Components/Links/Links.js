@@ -15,13 +15,13 @@ const Links = (props) => {
         <div className={"internal-link-container"}>
             <Link
                 className={currentPath.includes("overview") ? `${props.planetData.name.toLowerCase()}-active internal-link` : `internal-link`}
-                to={"/" + props.planetData.name.toLowerCase() + "/overview"}><span>01</span>Overview</Link>
+                to={"/" + props.planetData.name.toLowerCase() + "/overview"}><span>01</span>OVERVIEW</Link>
             <Link
                 className={currentPath.includes("structure") ? `${props.planetData.name.toLowerCase()}-active internal-link` : `internal-link`}
-                to={"/" + props.planetData.name.toLowerCase() + "/structure"}><span>02</span>Structure</Link>
+                to={"/" + props.planetData.name.toLowerCase() + "/structure"}><span>02</span>INTERNAL STRUCTURE</Link>
             <Link
                 className={currentPath.includes("geology") ? `${props.planetData.name.toLowerCase()}-active internal-link` : `internal-link`}
-                to={"/" + props.planetData.name.toLowerCase() + "/geology"}><span>03</span>Geology</Link>
+                to={"/" + props.planetData.name.toLowerCase() + "/geology"}><span>03</span>SURFACE GEOLOGY</Link>
         </div>
     )
 }

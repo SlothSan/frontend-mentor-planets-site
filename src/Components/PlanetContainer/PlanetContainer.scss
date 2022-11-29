@@ -18,6 +18,7 @@
 
     span {
       color: $light-gray;
+      margin: 0 25px 0 25px;
     }
 
     .internal-link {
@@ -27,7 +28,8 @@
       font-size: 1rem;
       display: flex;
       align-items: center;
-      justify-content: center;
+      border: solid 1px $dark-gray;
+      margin-top: 25px;
     }
 
     .internal-link:hover {
@@ -74,19 +76,19 @@
     padding: 50px 100px 0 100px;
 
     .planet-image-container {
-      width: 70%;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       max-height: 666px;
       max-width: 666px;
-      margin-right: 200px;
+      margin-right: 20%;
       margin-top: 5px;
       position: relative;
     }
 
     .planet-text-container {
-      width: 30%;
+      width: 100%;
       color: $text-white;
       display: flex;
       flex-direction: column;
