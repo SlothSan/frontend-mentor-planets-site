@@ -293,8 +293,8 @@
     display: flex;
     flex-direction: column;
   }
-  /* TODO REMOVE AFTER TESTING CHABGE TO HIDDEN ON PROP CHANGE */
-  .planet-container {
+
+  .hidden {
     display: none;
   }
 }

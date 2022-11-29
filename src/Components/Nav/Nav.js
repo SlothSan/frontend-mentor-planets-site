@@ -9,7 +9,10 @@ const Nav = (props) => {
     const location = useLocation();
 
     const handleMenuClick = () => {
+        console.log("Clicked!")
+        console.log(props.menuOpen)
         props.setMenuOpen(!props.menuOpen)
+        console.log(props.menuOpen);
     }
 
     useEffect(() => {
@@ -42,7 +45,8 @@ const Nav = (props) => {
                       to={"/neptune/overview"}>NEPTUNE</Link>
             </div>
             <div className={"menu-container"}>
-                <img className={props.menuOpen ? "logo disabled" : "logo"} src={Logo} alt={"hamburger menu icon"}/>
+                <img onClick={handleMenuClick} className={props.menuOpen ? "logo disabled" : "logo"} src={Logo}
+                     alt={"hamburger menu icon"}/>
             </div>
         </nav>
     )

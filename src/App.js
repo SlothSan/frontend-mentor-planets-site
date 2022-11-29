@@ -36,13 +36,18 @@ function App() {
             {isLoading === true ? '' : <BrowserRouter>
                 <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
                 <Routes>
-                    <Route path={"*"} element={<PlanetContainer planetData={mercuryData}/>}>
+                    <Route path={"*"} element={<PlanetContainer planetData={mercuryData} menuOpen={menuOpen}
+                                                                setMenuOpen={setMenuOpen}/>}>
                         <Route path={"*"} element={<PlanetOverview planetData={mercuryData}/>}/>
                     </Route>
-                    <Route path={"/mercury"} element={<PlanetContainer planetData={mercuryData}/>}>
-                        <Route path={"overview"} element={<PlanetOverview planetData={mercuryData}/>}/>
-                        <Route path={"structure"} element={<PlanetStructure planetData={mercuryData}/>}/>
-                        <Route path={"geology"} element={<PlanetGeology planetData={mercuryData}/>}/>
+                    <Route path={"/mercury"} element={<PlanetContainer planetData={mercuryData} menuOpen={menuOpen}
+                                                                       setMenuOpen={setMenuOpen}/>}>
+                        <Route path={"overview"} element={<PlanetOverview planetData={mercuryData} menuOpen={menuOpen}
+                                                                          setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"structure"} element={<PlanetStructure planetData={mercuryData} menuOpen={menuOpen}
+                                                                            setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"geology"} element={<PlanetGeology planetData={mercuryData} menuOpen={menuOpen}
+                                                                        setMenuOpen={setMenuOpen}/>}/>
                     </Route>
                     <Route path={"/venus"} element={<PlanetContainer planetData={venusData}/>}>
                         <Route path={"overview"} element={<PlanetOverview planetData={venusData}/>}/>

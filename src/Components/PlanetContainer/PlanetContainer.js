@@ -2,27 +2,41 @@ import {Link, Outlet} from "react-router-dom";
 import './PlanetContainer.css'
 
 const PlanetContainer = (props) => {
+
+    const handleClick = () => {
+        props.setMenuOpen(false)
+        console.log(props.menuOpen);
+    }
+
     return (
         <section>
-            <section className={"mobile-nav"}>
+            <section className={props.menuOpen ? "mobile-nav" : "hidden"}>
                 <Link className={"nav-link-mobile"}
+                      onClick={handleClick}
                       to={"/mercury/overview"}>MERCURY</Link>
                 <Link className={"nav-link-mobile"}
+                      onClick={handleClick}
                       to={"/venus/overview"}>VENUS</Link>
                 <Link className={"nav-link-mobile"}
+                      onClick={handleClick}
                       to={"/earth/overview"}>EARTH</Link>
                 <Link className={"nav-link-mobile"}
+                      onClick={handleClick}
                       to={"/mars/overview"}>MARS</Link>
                 <Link className={"nav-link-mobile"}
+                      onClick={handleClick}
                       to={"/jupiter/overview"}>JUPITER</Link>
                 <Link className={"nav-link-mobile"}
+                      onClick={handleClick}
                       to={"/saturn/overview"}>SATURN</Link>
                 <Link className={"nav-link-mobile"}
+                      onClick={handleClick}
                       to={"/uranus/overview"}>URANUS</Link>
                 <Link className={"nav-link-mobile"}
+                      onClick={handleClick}
                       to={"/neptune/overview"}>NEPTUNE</Link>
             </section>
-            <section className={"planet-container"}>
+            <section className={props.menuOpen ? "hidden" : "planet-container"}>
                 <Outlet/>
                 <div className={"info-container"}>
                     <div className={"info-card-container"}>
