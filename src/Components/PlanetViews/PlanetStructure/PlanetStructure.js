@@ -1,8 +1,10 @@
 import Links from "../../Links/Links";
+import MobileLinks from "../../MobileLinks/MobileLinks";
 
 const PlanetStructure = (props) => {
     return (
         <div className={"planet-sub-container"}>
+            <MobileLinks className={"mobile-link-container"} planetData={props.planetData}/>
             <div className={"planet-image-container"}>
                 <img className={"planet-image"} src={props.planetData.images.internal}
                      alt={`${props.planetData.name} structure`}/>
@@ -17,7 +19,7 @@ const PlanetStructure = (props) => {
                         src={"../imgs/icon-source.svg"}
                         alt={"source icon"}/></a></p>
                 </div>
-                <Links planetData={props.planetData}/>
+                <Links className={"internal-link-container"} planetData={props.planetData}/>
             </div>
         </div>
 

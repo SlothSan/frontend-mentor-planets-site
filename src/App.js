@@ -10,6 +10,7 @@ import {useEffect, useState} from "react";
 
 function App() {
     const [isLoading, setIsLoading] = useState(true);
+    const [menuOpen, setMenuOpen] = useState(false);
     const [mercuryData, setMercuryData] = useState();
     const [venusData, setVenusData] = useState();
     const [earthData, setEarthData] = useState();
@@ -33,50 +34,83 @@ function App() {
     return (
         <div className="App">
             {isLoading === true ? '' : <BrowserRouter>
-                <Nav/>
+                <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
                 <Routes>
-                    <Route path={"*"} element={<PlanetContainer planetData={mercuryData}/>}>
+                    <Route path={"*"} element={<PlanetContainer planetData={mercuryData} menuOpen={menuOpen}
+                                                                setMenuOpen={setMenuOpen}/>}>
                         <Route path={"*"} element={<PlanetOverview planetData={mercuryData}/>}/>
                     </Route>
-                    <Route path={"/mercury"} element={<PlanetContainer planetData={mercuryData}/>}>
-                        <Route path={"overview"} element={<PlanetOverview planetData={mercuryData}/>}/>
-                        <Route path={"structure"} element={<PlanetStructure planetData={mercuryData}/>}/>
-                        <Route path={"geology"} element={<PlanetGeology planetData={mercuryData}/>}/>
+                    <Route path={"/mercury"} element={<PlanetContainer planetData={mercuryData} menuOpen={menuOpen}
+                                                                       setMenuOpen={setMenuOpen}/>}>
+                        <Route path={"overview"} element={<PlanetOverview planetData={mercuryData} menuOpen={menuOpen}
+                                                                          setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"structure"} element={<PlanetStructure planetData={mercuryData} menuOpen={menuOpen}
+                                                                            setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"geology"} element={<PlanetGeology planetData={mercuryData} menuOpen={menuOpen}
+                                                                        setMenuOpen={setMenuOpen}/>}/>
                     </Route>
-                    <Route path={"/venus"} element={<PlanetContainer planetData={venusData}/>}>
-                        <Route path={"overview"} element={<PlanetOverview planetData={venusData}/>}/>
-                        <Route path={"structure"} element={<PlanetStructure planetData={venusData}/>}/>
-                        <Route path={"geology"} element={<PlanetGeology planetData={venusData}/>}/>
+                    <Route path={"/venus"} element={<PlanetContainer planetData={venusData} menuOpen={menuOpen}
+                                                                     setMenuOpen={setMenuOpen}/>}>
+                        <Route path={"overview"} element={<PlanetOverview planetData={venusData} menuOpen={menuOpen}
+                                                                          setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"structure"} element={<PlanetStructure planetData={venusData} menuOpen={menuOpen}
+                                                                            setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"geology"} element={<PlanetGeology planetData={venusData} menuOpen={menuOpen}
+                                                                        setMenuOpen={setMenuOpen}/>}/>
                     </Route>
-                    <Route path={"/earth"} element={<PlanetContainer planetData={earthData}/>}>
-                        <Route path={"overview"} element={<PlanetOverview planetData={earthData}/>}/>
-                        <Route path={"structure"} element={<PlanetStructure planetData={earthData}/>}/>
-                        <Route path={"geology"} element={<PlanetGeology planetData={earthData}/>}/>
+                    <Route path={"/earth"} element={<PlanetContainer planetData={earthData} menuOpen={menuOpen}
+                                                                     setMenuOpen={setMenuOpen}/>}>
+                        <Route path={"overview"} element={<PlanetOverview planetData={earthData} menuOpen={menuOpen}
+                                                                          setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"structure"} element={<PlanetStructure planetData={earthData} menuOpen={menuOpen}
+                                                                            setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"geology"} element={<PlanetGeology planetData={earthData}/>} menuOpen={menuOpen}
+                               setMenuOpen={setMenuOpen}/>
                     </Route>
-                    <Route path={"/mars"} element={<PlanetContainer planetData={marsData}/>}>
-                        <Route path={"overview"} element={<PlanetOverview planetData={marsData}/>}/>
-                        <Route path={"structure"} element={<PlanetStructure planetData={marsData}/>}/>
-                        <Route path={"geology"} element={<PlanetGeology planetData={marsData}/>}/>
+                    <Route path={"/mars"} element={<PlanetContainer planetData={marsData} menuOpen={menuOpen}
+                                                                    setMenuOpen={setMenuOpen}/>}>
+                        <Route path={"overview"} element={<PlanetOverview planetData={marsData} menuOpen={menuOpen}
+                                                                          setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"structure"} element={<PlanetStructure planetData={marsData} menuOpen={menuOpen}
+                                                                            setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"geology"} element={<PlanetGeology planetData={marsData} menuOpen={menuOpen}
+                                                                        setMenuOpen={setMenuOpen}/>}/>
                     </Route>
-                    <Route path={"/jupiter"} element={<PlanetContainer planetData={jupiterData}/>}>
-                        <Route path={"overview"} element={<PlanetOverview planetData={jupiterData}/>}/>
-                        <Route path={"structure"} element={<PlanetStructure planetData={jupiterData}/>}/>
-                        <Route path={"geology"} element={<PlanetGeology planetData={jupiterData}/>}/>
+                    <Route path={"/jupiter"} element={<PlanetContainer planetData={jupiterData} menuOpen={menuOpen}
+                                                                       setMenuOpen={setMenuOpen}/>}>
+                        <Route path={"overview"} element={<PlanetOverview planetData={jupiterData} menuOpen={menuOpen}
+                                                                          setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"structure"} element={<PlanetStructure planetData={jupiterData} menuOpen={menuOpen}
+                                                                            setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"geology"} element={<PlanetGeology planetData={jupiterData} menuOpen={menuOpen}
+                                                                        setMenuOpen={setMenuOpen}/>}/>
                     </Route>
-                    <Route path={"/saturn"} element={<PlanetContainer planetData={saturnData}/>}>
-                        <Route path={"overview"} element={<PlanetOverview planetData={saturnData}/>}/>
-                        <Route path={"structure"} element={<PlanetStructure planetData={saturnData}/>}/>
-                        <Route path={"geology"} element={<PlanetGeology planetData={saturnData}/>}/>
+                    <Route path={"/saturn"} element={<PlanetContainer planetData={saturnData} menuOpen={menuOpen}
+                                                                      setMenuOpen={setMenuOpen}/>}>
+                        <Route path={"overview"} element={<PlanetOverview planetData={saturnData} menuOpen={menuOpen}
+                                                                          setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"structure"} element={<PlanetStructure planetData={saturnData} menuOpen={menuOpen}
+                                                                            setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"geology"} element={<PlanetGeology planetData={saturnData} menuOpen={menuOpen}
+                                                                        setMenuOpen={setMenuOpen}/>}/>
                     </Route>
-                    <Route path={"/uranus"} element={<PlanetContainer planetData={uranusData}/>}>
-                        <Route path={"overview"} element={<PlanetOverview planetData={uranusData}/>}/>
-                        <Route path={"structure"} element={<PlanetStructure planetData={uranusData}/>}/>
-                        <Route path={"geology"} element={<PlanetGeology planetData={uranusData}/>}/>
+                    <Route path={"/uranus"} element={<PlanetContainer planetData={uranusData} menuOpen={menuOpen}
+                                                                      setMenuOpen={setMenuOpen}/>}>
+                        <Route path={"overview"} element={<PlanetOverview planetData={uranusData} menuOpen={menuOpen}
+                                                                          setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"structure"} element={<PlanetStructure planetData={uranusData} menuOpen={menuOpen}
+                                                                            setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"geology"} element={<PlanetGeology planetData={uranusData} menuOpen={menuOpen}
+                                                                        setMenuOpen={setMenuOpen}/>}/>
                     </Route>
-                    <Route path={"/neptune"} element={<PlanetContainer planetData={neptuneData}/>}>
-                        <Route path={"overview"} element={<PlanetOverview planetData={neptuneData}/>}/>
-                        <Route path={"structure"} element={<PlanetStructure planetData={neptuneData}/>}/>
-                        <Route path={"geology"} element={<PlanetGeology planetData={neptuneData}/>}/>
+                    <Route path={"/neptune"} element={<PlanetContainer planetData={neptuneData} menuOpen={menuOpen}
+                                                                       setMenuOpen={setMenuOpen}/>}>
+                        <Route path={"overview"} element={<PlanetOverview planetData={neptuneData} menuOpen={menuOpen}
+                                                                          setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"structure"} element={<PlanetStructure planetData={neptuneData} menuOpen={menuOpen}
+                                                                            setMenuOpen={setMenuOpen}/>}/>
+                        <Route path={"geology"} element={<PlanetGeology planetData={neptuneData} menuOpen={menuOpen}
+                                                                        setMenuOpen={setMenuOpen}/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>}

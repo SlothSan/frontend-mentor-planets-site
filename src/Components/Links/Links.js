@@ -12,7 +12,7 @@ const Links = (props) => {
     }, [location])
 
     return (
-        <div className={"internal-link-container"}>
+        <div className={props.className}>
             <Link
                 className={currentPath.includes("overview") ? `${props.planetData.name.toLowerCase()}-active internal-link` : `internal-link`}
                 to={"/" + props.planetData.name.toLowerCase() + "/overview"}><span>01</span>OVERVIEW</Link>

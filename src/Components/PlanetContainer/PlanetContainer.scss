@@ -1,8 +1,24 @@
 @import '../../Styles/SharedStyling';
 
+@mixin icon-sizing {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+
+.mobile-nav {
+  display: none;
+}
+
 .planet-container {
   width: 100%;
   height: 100%;
+
+  .mobile-nav {
+    display: none;
+  }
 
   .internal-link-container {
     display: flex;
@@ -93,7 +109,7 @@
       min-height: 666px;
       max-height: 666px;
       max-width: 666px;
-      margin-right: 10%;
+      margin-right: 17.5%;
       margin-top: 5px;
       position: relative;
 
@@ -145,8 +161,8 @@
   .info-container {
     display: flex;
     width: 100%;
-    margin: 0 auto;
     justify-content: center;
+    margin: 20px auto 20px auto;
 
     .info-card-container {
       display: flex;
@@ -178,6 +194,10 @@
     .info-card:last-of-type {
       margin-right: 0;
     }
+  }
+
+  .mobile-link-container {
+    display: none;
   }
 }
 
@@ -251,8 +271,7 @@
     }
 
     .info-container {
-      margin-top: 5%;
-      padding: 0 20px;
+      padding: 0 30px;
       width: 100%;
       justify-content: space-around;
 
@@ -262,7 +281,7 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
-        margin-right: 20px;
+        margin-right: 15px;
 
         .info-title {
           font-size: 0.8rem;
@@ -277,9 +296,246 @@
       }
 
       .info-card:last-of-type {
-        margin-right: 0px;
+        margin-right: 0;
+      }
+    }
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .mobile-link-container {
+    display: none;
+  }
+}
+
+@media(max-width: 750px) {
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    min-height: 580px;
+    font-family: "League Spartan", sans-serif;
+  }
+
+  .mercury-icon {
+    background-color: $mercury-icon;
+    @include icon-sizing;
+  }
+
+  .venus-icon {
+    background-color: $venus-icon;
+    @include icon-sizing;
+  }
+
+  .earth-icon {
+    background-color: $earth-icon;
+    @include icon-sizing;
+  }
+
+  .mars-icon {
+    background-color: $mars-icon;
+    @include icon-sizing;
+  }
+
+  .jupiter-icon {
+    background-color: $jupiter-icon;
+    @include icon-sizing;
+  }
+
+  .saturn-icon {
+    background-color: $saturn-icon;
+    @include icon-sizing;
+  }
+
+  .uranus-icon {
+    background-color: $uranus-icon;
+    @include icon-sizing;
+  }
+
+  .neptune-icon {
+    background-color: $neptune-icon;
+    @include icon-sizing;
+  }
+
+  .nav-link-mobile {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    line-height: 25px;
+    color: $text-white;
+    margin: 0 30px;
+    border-bottom: 1px solid $dark-gray;
+
+
+    .left-container {
+      display: flex;
+    }
+
+    .right-container {
+      img {
+        height: 10px;
+        width: 10px;
       }
     }
   }
 
+  .nav-link-mobile:last-of-type {
+    border-bottom: none;
+  }
+
+  .hidden-menu {
+    display: none;
+  }
+
+  .internal-link-container {
+    display: none !important;
+  }
+
+  .mobile-link-container {
+    display: flex !important;
+    justify-content: space-around;
+    border-bottom: 1px solid $light-gray;
+
+    .mobile-link {
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      padding: 20px 0;
+      font-family: 'League Spartan', sans-serif;
+      color: $light-gray;
+    }
+
+    .mercury-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-blue;
+      margin-bottom: -1px;
+    }
+
+    .venus-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-orange;
+      margin-bottom: -1px;
+    }
+
+    .earth-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-purple;
+      margin-bottom: -1px;
+    }
+
+    .mars-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-red;
+      margin-bottom: -1px;
+    }
+
+    .jupiter-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-deep-red;
+      margin-bottom: -1px;
+    }
+
+    .saturn-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-brown;
+      margin-bottom: -1px;
+    }
+
+    .uranus-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-teal;
+      margin-bottom: -1px;
+    }
+
+    .neptune-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-dark-blue;
+      margin-bottom: -1px;
+    }
+  }
+
+  .planet-image-container {
+    min-width: 375px !important;
+    width: 375px !important;
+    min-height: 200px !important;
+    height: 300px !important;
+    max-width: 375px !important;
+    max-height: 300px !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+  .planet-image {
+    max-height: 140px !important;
+  }
+
+  .geology-image {
+    max-height: 135px !important;
+    max-width: 135px !important;
+    top: 160px !important;
+  }
+
+  .planet-text-container {
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 375px !important;
+    height: 260px !important;
+    margin: 0 auto;
+
+    .planet-info-container {
+      margin: 0 auto !important;
+
+      .planet-name {
+        font-size: 2.5rem !important;
+        margin-top: 0 !important;
+      }
+
+      .planet-text {
+        font-size: 0.9rem !important;
+        font-weight: normal !important;
+        margin-top: 10px !important;
+      }
+
+      .source-text {
+        margin-top: 55px !important;
+        line-height: 25px !important;
+        font-size: 0.9rem !important;
+
+        .source-link {
+          font-weight: bold !important;
+        }
+      }
+    }
+  }
+  .info-container {
+    .info-card-container {
+      flex-direction: column !important;
+
+
+      .info-card {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 345px;
+        margin: 7px auto 0 auto;
+        height: 50px;
+        border: 1px solid $light-gray;
+        padding: 0 10px;
+
+        .info-title {
+          margin-top: 4px;
+          font-size: 0.7rem;
+          letter-spacing: 0.73px;
+          font-weight: bold;
+        }
+
+        .info-text {
+          font-size: 1.25rem;
+          line-height: 20px;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
