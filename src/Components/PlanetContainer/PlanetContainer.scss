@@ -408,9 +408,86 @@
 
     .mercury-active {
       color: $text-white;
-      //TODO FIX ISSUE WITH LINK LAYERING!
+      //TODO ADD ACTIVE STATES FOR ALL OTHER PLANETS
       border-bottom: 1px solid $active-blue;
       margin-bottom: -1px;
+    }
+  }
+
+  .planet-image-container {
+    min-width: 375px !important;
+    width: 375px !important;
+    min-height: 200px !important;
+    height: 300px !important;
+    max-width: 375px !important;
+    max-height: 300px !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+  .planet-image {
+    max-height: 111px !important;
+  }
+
+  .planet-text-container {
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 375px !important;
+    margin: 0 auto;
+
+    .planet-info-container {
+      margin: 0 auto !important;
+
+      .planet-name {
+        font-size: 2.5rem !important;
+        margin-top: 0 !important;
+      }
+
+      .planet-text {
+        font-size: 0.9rem !important;
+        font-weight: normal !important;
+        margin-top: 10px !important;
+      }
+
+      .source-text {
+        margin-top: 40px !important;
+        line-height: 25px !important;
+        font-size: 0.9rem !important;
+
+        .source-link {
+          font-weight: bold !important;
+        }
+      }
+    }
+  }
+  .info-container {
+    .info-card-container {
+      flex-direction: column !important;
+
+
+      .info-card {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 345px;
+        margin: 7px auto 0 auto;
+        height: 50px;
+        border: 1px solid $light-gray;
+        padding: 0 10px;
+
+        .info-title {
+          margin-top: 4px;
+          font-size: 0.7rem;
+          letter-spacing: 0.73px;
+          font-weight: bold;
+        }
+
+        .info-text {
+          font-size: 1.25rem;
+          line-height: 20px;
+          margin: 0;
+        }
+      }
     }
   }
 }
