@@ -6,7 +6,7 @@ const PlanetOverview = (props) => {
         <div className={"planet-sub-container"}>
             <MobileLinks className={"mobile-link-container"} planetData={props.planetData}/>
             <div className={"planet-image-container"}>
-                <img className={"planet-image"} src={props.planetData.images.planet}
+                <img className={"planet-image"} src={process.env.PUBLIC_URL + props.planetData.images.planet}
                      alt={`Image of ${props.planetData.name} overview`}/>
             </div>
             <div className={"planet-text-container"}>
@@ -16,7 +16,7 @@ const PlanetOverview = (props) => {
                     <p className={"source-text"}>Source : <a className={"source-link"}
                                                              href={props.planetData.overview.source}
                                                              target={"_blank"}>Wikipedia<img
-                        src={"../imgs/icon-source.svg"}
+                        src={process.env.PUBLIC_URL + "/imgs/icon-source.svg"}
                         alt={"source icon"}/></a></p>
                 </div>
                 <Links className={"internal-link-container"} planetData={props.planetData}/>

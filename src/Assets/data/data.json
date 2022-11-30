@@ -162,7 +162,7 @@
     "radius": "25,362 KM",
     "temperature": "-195°c",
     "images": {
-      "planet": "../imgs/planet-uranus.svg",
+      "planet": "/imgs/planet-uranus.svg",
       "internal": "../imgs/planet-uranus-internal.svg",
       "geology": "../imgs/geology-uranus.png"
     }
