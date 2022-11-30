@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/frontend-mentor-planets-site/static/css/main.44acbe57.css",
-    "main.js": "/frontend-mentor-planets-site/static/js/main.a65c62b1.js",
+    "main.js": "/frontend-mentor-planets-site/static/js/main.e7c6d64a.js",
     "static/js/787.e46a8217.chunk.js": "/frontend-mentor-planets-site/static/js/787.e46a8217.chunk.js",
     "static/media/background-stars.svg": "/frontend-mentor-planets-site/static/media/background-stars.f6233a6a8d2351c57f2b.svg",
     "index.html": "/frontend-mentor-planets-site/index.html",
     "static/media/icon-hamburger.svg": "/frontend-mentor-planets-site/static/media/icon-hamburger.05a40a49142005f6faf230286ab38214.svg",
     "static/media/icon-chevron.svg": "/frontend-mentor-planets-site/static/media/icon-chevron.8915cee97f993fb990aac66c578ad575.svg",
     "main.44acbe57.css.map": "/frontend-mentor-planets-site/static/css/main.44acbe57.css.map",
-    "main.a65c62b1.js.map": "/frontend-mentor-planets-site/static/js/main.a65c62b1.js.map",
+    "main.e7c6d64a.js.map": "/frontend-mentor-planets-site/static/js/main.e7c6d64a.js.map",
     "787.e46a8217.chunk.js.map": "/frontend-mentor-planets-site/static/js/787.e46a8217.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44acbe57.css",
-    "static/js/main.a65c62b1.js"
+    "static/js/main.e7c6d64a.js"
   ]
 }
