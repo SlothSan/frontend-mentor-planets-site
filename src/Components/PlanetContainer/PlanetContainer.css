@@ -3,8 +3,9 @@
 }
 
 .planet-container {
-  width: 100%;
+  width: 1440px;
   height: 100%;
+  margin: 0 auto;
 }
 .planet-container .mobile-nav {
   display: none;
@@ -163,6 +164,7 @@
 @media (max-width: 1200px) {
   .planet-container {
     flex-direction: column;
+    width: 1000px;
   }
   .planet-container .planet-sub-container {
     flex-direction: column;
@@ -249,6 +251,9 @@
   }
 }
 @media (max-width: 750px) {
+  .planet-container {
+    width: 375px;
+  }
   .mobile-nav {
     display: flex;
     flex-direction: column;
