@@ -195,6 +195,10 @@
       margin-right: 0;
     }
   }
+
+  .mobile-link-container {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -299,6 +303,9 @@
   .mobile-nav {
     display: none;
   }
+  .mobile-link-container {
+    display: none;
+  }
 }
 
 @media(max-width: 750px) {
@@ -379,5 +386,22 @@
 
   .hidden-menu {
     display: none;
+  }
+
+  .internal-link-container {
+    display: none !important;
+  }
+
+  .mobile-link-container {
+    display: flex !important;
+
+    .mobile-link {
+      text-decoration: none;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      padding: 15px 20px;
+      font-family: 'League Spartan', sans-serif;
+
+    }
   }
 }
