@@ -32,7 +32,7 @@ function App() {
         setIsLoading(false);
     }, [Data])
     return (
-        <div className="App">
+        <main className="App">
             {isLoading === true ? '' : <BrowserRouter>
                 <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
                 <Routes>
@@ -114,7 +114,7 @@ function App() {
                     </Route>
                 </Routes>
             </BrowserRouter>}
-        </div>
+        </main>
     );
 }
 

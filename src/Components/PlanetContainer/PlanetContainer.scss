@@ -13,8 +13,9 @@
 }
 
 .planet-container {
-  width: 100%;
+  width: 1440px;
   height: 100%;
+  margin: 0 auto;
 
   .mobile-nav {
     display: none;
@@ -97,7 +98,7 @@
   .planet-sub-container {
     display: flex;
     width: 100%;
-    padding: 50px 100px 0 100px;
+    padding: 0 100px 0 100px;
 
     .planet-image-container {
       width: 100%;
@@ -126,6 +127,7 @@
       color: $text-white;
       display: flex;
       flex-direction: column;
+      padding-top: 100px;
 
       .planet-name {
         font-family: 'Antonio', sans-serif;
@@ -162,7 +164,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 20px auto 20px auto;
+    margin: 10px auto 10px auto;
 
     .info-card-container {
       display: flex;
@@ -204,6 +206,7 @@
 @media (max-width: 1200px) {
   .planet-container {
     flex-direction: column;
+    width: 1000px;
 
     .planet-sub-container {
       flex-direction: column;
@@ -309,6 +312,9 @@
 }
 
 @media(max-width: 750px) {
+  .planet-container {
+    width: 375px;
+  }
   .mobile-nav {
     display: flex;
     flex-direction: column;
