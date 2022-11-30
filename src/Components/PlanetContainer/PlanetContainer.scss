@@ -408,8 +408,49 @@
 
     .mercury-active {
       color: $text-white;
-      //TODO ADD ACTIVE STATES FOR ALL OTHER PLANETS
       border-bottom: 1px solid $active-blue;
+      margin-bottom: -1px;
+    }
+
+    .venus-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-orange;
+      margin-bottom: -1px;
+    }
+
+    .earth-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-purple;
+      margin-bottom: -1px;
+    }
+
+    .mars-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-red;
+      margin-bottom: -1px;
+    }
+
+    .jupiter-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-deep-red;
+      margin-bottom: -1px;
+    }
+
+    .saturn-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-brown;
+      margin-bottom: -1px;
+    }
+
+    .uranus-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-teal;
+      margin-bottom: -1px;
+    }
+
+    .neptune-active {
+      color: $text-white;
+      border-bottom: 1px solid $active-dark-blue;
       margin-bottom: -1px;
     }
   }
@@ -429,8 +470,8 @@
   }
 
   .geology-image {
-    max-height: 150px !important;
-    max-width: 150px !important;
+    max-height: 135px !important;
+    max-width: 135px !important;
     top: 160px !important;
   }
 
@@ -439,6 +480,7 @@
     justify-content: center !important;
     text-align: center !important;
     width: 375px !important;
+    height: 260px !important;
     margin: 0 auto;
 
     .planet-info-container {
@@ -456,7 +498,7 @@
       }
 
       .source-text {
-        margin-top: 40px !important;
+        margin-top: 55px !important;
         line-height: 25px !important;
         font-size: 0.9rem !important;
 
