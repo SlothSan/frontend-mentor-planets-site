@@ -127,6 +127,7 @@
       color: $text-white;
       display: flex;
       flex-direction: column;
+      padding-top: 100px;
 
       .planet-name {
         font-family: 'Antonio', sans-serif;
@@ -163,7 +164,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 0 auto 10px auto;
+    margin: 10px auto 10px auto;
 
     .info-card-container {
       display: flex;
