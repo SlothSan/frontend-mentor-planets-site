@@ -1,0 +1,466 @@
+.mobile-nav {
+  display: none;
+}
+
+.planet-container {
+  width: 100%;
+  height: 100%;
+}
+.planet-container .mobile-nav {
+  display: none;
+}
+.planet-container .internal-link-container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.planet-container .internal-link-container span, .planet-container .internal-link-container .internal-link {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-family: "League Spartan", sans-serif;
+}
+.planet-container .internal-link-container span {
+  color: #838391;
+  margin: 0 25px 0 25px;
+}
+.planet-container .internal-link-container .internal-link {
+  width: 350px;
+  height: 48px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  border: solid 1px #38384F;
+  margin-top: 25px;
+}
+.planet-container .internal-link-container .internal-link:hover {
+  background-color: #38384F;
+}
+.planet-container .internal-link-container .mercury-active {
+  background-color: #419EBB;
+  border: none;
+}
+.planet-container .internal-link-container .venus-active {
+  background-color: #EDA249;
+  border: none;
+}
+.planet-container .internal-link-container .earth-active {
+  background-color: #6D2ED5;
+  border: none;
+}
+.planet-container .internal-link-container .mars-active {
+  background-color: #D14C32;
+  border: none;
+}
+.planet-container .internal-link-container .jupiter-active {
+  background-color: #D83A34;
+  border: none;
+}
+.planet-container .internal-link-container .saturn-active {
+  background-color: #CD5120;
+  border: none;
+}
+.planet-container .internal-link-container .uranus-active {
+  background-color: #1EC1A2;
+  border: none;
+}
+.planet-container .internal-link-container .neptune-active {
+  background-color: #2D68F0;
+  border: none;
+}
+.planet-container .planet-sub-container {
+  display: flex;
+  width: 100%;
+  padding: 50px 100px 0 100px;
+}
+.planet-container .planet-sub-container .planet-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 666px;
+  min-height: 666px;
+  max-height: 666px;
+  max-width: 666px;
+  margin-right: 17.5%;
+  margin-top: 5px;
+  position: relative;
+}
+.planet-container .planet-sub-container .planet-image-container .geology-image {
+  position: absolute;
+  bottom: 50px;
+  max-width: 163px;
+  max-height: 199px;
+}
+.planet-container .planet-sub-container .planet-text-container {
+  width: 100%;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.planet-container .planet-sub-container .planet-text-container .planet-name {
+  font-family: "Antonio", sans-serif;
+  font-size: 5rem;
+}
+.planet-container .planet-sub-container .planet-text-container .planet-text, .planet-container .planet-sub-container .planet-text-container .source-text {
+  margin-top: 30px;
+  width: 350px;
+  height: 150px;
+  font-family: "League Spartan", sans-serif;
+  line-height: 25px;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+.planet-container .planet-sub-container .planet-text-container .source-text {
+  color: #838391;
+  height: auto;
+}
+.planet-container .planet-sub-container .planet-text-container .source-link {
+  text-decoration: underline;
+  color: #838391;
+}
+.planet-container .planet-sub-container .planet-text-container .source-link img {
+  margin-left: 10px;
+}
+.planet-container .info-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 20px auto 20px auto;
+}
+.planet-container .info-container .info-card-container {
+  display: flex;
+}
+.planet-container .info-container .info-card {
+  width: 255px;
+  height: 128px;
+  border: 2px solid #38384F;
+  border-radius: 5px;
+  padding: 25px;
+  color: #FFFFFF;
+  margin-right: 70px;
+}
+.planet-container .info-container .info-card .info-title {
+  font-family: "League Spartan", sans-serif;
+  color: #838391;
+  font-size: 1rem;
+  line-height: 25px;
+  font-weight: bold;
+}
+.planet-container .info-container .info-card .info-text {
+  font-family: "Antonio", sans-serif;
+  font-size: 2.5rem;
+}
+.planet-container .info-container .info-card:last-of-type {
+  margin-right: 0;
+}
+.planet-container .mobile-link-container {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .planet-container {
+    flex-direction: column;
+  }
+  .planet-container .planet-sub-container {
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .planet-container .planet-sub-container .planet-image-container {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 300px;
+    margin: 100px 0 50px 0;
+  }
+  .planet-container .planet-sub-container .planet-image-container img {
+    max-height: 300px;
+  }
+  .planet-container .planet-sub-container .planet-image-container .geology-image {
+    max-height: 150px;
+    max-width: 150px;
+    top: 200px;
+  }
+  .planet-container .planet-sub-container .planet-text-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    height: 268px;
+  }
+  .planet-container .planet-sub-container .planet-text-container .planet-info-container {
+    width: 325px;
+    margin-right: 75px;
+  }
+  .planet-container .planet-sub-container .planet-text-container .planet-info-container .planet-name {
+    font-size: 2rem;
+  }
+  .planet-container .planet-sub-container .planet-text-container .planet-info-container .planet-text, .planet-container .planet-sub-container .planet-text-container .planet-info-container .source-text {
+    width: auto;
+    height: auto;
+    font-size: 0.8rem;
+    line-height: 22px;
+  }
+  .planet-container .planet-sub-container .planet-text-container .planet-info-container .source-text {
+    margin-top: 30px;
+  }
+  .planet-container .planet-sub-container .planet-text-container .internal-link {
+    width: 325px;
+    margin-top: 15px;
+  }
+  .planet-container .planet-sub-container .planet-text-container p {
+    margin-top: 10px;
+  }
+  .planet-container .info-container {
+    padding: 0 30px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .planet-container .info-container .info-card {
+    width: 164px;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-right: 15px;
+  }
+  .planet-container .info-container .info-card .info-title {
+    font-size: 0.8rem;
+    line-height: 16px;
+  }
+  .planet-container .info-container .info-card .info-text {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    line-height: 0;
+  }
+  .planet-container .info-container .info-card:last-of-type {
+    margin-right: 0;
+  }
+  .mobile-nav {
+    display: none;
+  }
+  .mobile-link-container {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    min-height: 580px;
+    font-family: "League Spartan", sans-serif;
+  }
+  .mercury-icon {
+    background-color: #DEF4FC;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .venus-icon {
+    background-color: #F7CC7F;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .earth-icon {
+    background-color: #545BFE;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .mars-icon {
+    background-color: #FF6A45;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .jupiter-icon {
+    background-color: #ECAD7A;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .saturn-icon {
+    background-color: #FCCB6B;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .uranus-icon {
+    background-color: #65F0D5;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .neptune-icon {
+    background-color: #497EFA;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  .nav-link-mobile {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0 30px;
+    border-bottom: 1px solid #38384F;
+  }
+  .nav-link-mobile .left-container {
+    display: flex;
+  }
+  .nav-link-mobile .right-container img {
+    height: 10px;
+    width: 10px;
+  }
+  .nav-link-mobile:last-of-type {
+    border-bottom: none;
+  }
+  .hidden-menu {
+    display: none;
+  }
+  .internal-link-container {
+    display: none !important;
+  }
+  .mobile-link-container {
+    display: flex !important;
+    justify-content: space-around;
+    border-bottom: 1px solid #838391;
+  }
+  .mobile-link-container .mobile-link {
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    padding: 20px 0;
+    font-family: "League Spartan", sans-serif;
+    color: #838391;
+  }
+  .mobile-link-container .mercury-active {
+    color: #FFFFFF;
+    border-bottom: 1px solid #419EBB;
+    margin-bottom: -1px;
+  }
+  .mobile-link-container .venus-active {
+    color: #FFFFFF;
+    border-bottom: 1px solid #EDA249;
+    margin-bottom: -1px;
+  }
+  .mobile-link-container .earth-active {
+    color: #FFFFFF;
+    border-bottom: 1px solid #6D2ED5;
+    margin-bottom: -1px;
+  }
+  .mobile-link-container .mars-active {
+    color: #FFFFFF;
+    border-bottom: 1px solid #D14C32;
+    margin-bottom: -1px;
+  }
+  .mobile-link-container .jupiter-active {
+    color: #FFFFFF;
+    border-bottom: 1px solid #D83A34;
+    margin-bottom: -1px;
+  }
+  .mobile-link-container .saturn-active {
+    color: #FFFFFF;
+    border-bottom: 1px solid #CD5120;
+    margin-bottom: -1px;
+  }
+  .mobile-link-container .uranus-active {
+    color: #FFFFFF;
+    border-bottom: 1px solid #1EC1A2;
+    margin-bottom: -1px;
+  }
+  .mobile-link-container .neptune-active {
+    color: #FFFFFF;
+    border-bottom: 1px solid #2D68F0;
+    margin-bottom: -1px;
+  }
+  .planet-image-container {
+    min-width: 375px !important;
+    width: 375px !important;
+    min-height: 200px !important;
+    height: 300px !important;
+    max-width: 375px !important;
+    max-height: 300px !important;
+    justify-content: center !important;
+    margin: 0 auto !important;
+  }
+  .planet-image {
+    max-height: 140px !important;
+  }
+  .geology-image {
+    max-height: 135px !important;
+    max-width: 135px !important;
+    top: 160px !important;
+  }
+  .planet-text-container {
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 375px !important;
+    height: 260px !important;
+    margin: 0 auto;
+  }
+  .planet-text-container .planet-info-container {
+    margin: 0 auto !important;
+  }
+  .planet-text-container .planet-info-container .planet-name {
+    font-size: 2.5rem !important;
+    margin-top: 0 !important;
+  }
+  .planet-text-container .planet-info-container .planet-text {
+    font-size: 0.9rem !important;
+    font-weight: normal !important;
+    margin-top: 10px !important;
+  }
+  .planet-text-container .planet-info-container .source-text {
+    margin-top: 55px !important;
+    line-height: 25px !important;
+    font-size: 0.9rem !important;
+  }
+  .planet-text-container .planet-info-container .source-text .source-link {
+    font-weight: bold !important;
+  }
+  .info-container .info-card-container {
+    flex-direction: column !important;
+  }
+  .info-container .info-card-container .info-card {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 345px;
+    margin: 7px auto 0 auto;
+    height: 50px;
+    border: 1px solid #838391;
+    padding: 0 10px;
+  }
+  .info-container .info-card-container .info-card .info-title {
+    margin-top: 4px;
+    font-size: 0.7rem;
+    letter-spacing: 0.73px;
+    font-weight: bold;
+  }
+  .info-container .info-card-container .info-card .info-text {
+    font-size: 1.25rem;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=PlanetContainer.css.map */
