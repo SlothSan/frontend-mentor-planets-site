@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub Repo](https://github.com/SlothSan/frontend-mentor-planets-site)
-- Live Site URL: [Add live site URL here](https://slothsan.github.io/frontend-mentor-planets-site/)
+- Live Site URL: [GitHub Pages](https://slothsan.github.io/frontend-mentor-planets-site/)
 
 ## My process
 
@@ -57,8 +57,8 @@ Focus on mobile first development and write more maintainable SCSS.
 
 ## Author
 
-- Website - [Mike-Oram.co.uk](https://www.mike-oram.co.uk)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/slothsan)
+- Website - [Portfolio](https://www.mike-oram.co.uk)
+- Frontend Mentor - [@SlothSan](https://www.frontendmentor.io/profile/slothsan)
 
 ## Acknowledgments
 
