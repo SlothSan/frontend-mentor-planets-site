@@ -394,14 +394,23 @@
 
   .mobile-link-container {
     display: flex !important;
+    justify-content: space-around;
+    border-bottom: 1px solid $light-gray;
 
     .mobile-link {
       text-decoration: none;
       letter-spacing: 2px;
       font-size: 0.8rem;
-      padding: 15px 20px;
+      padding: 20px 0;
       font-family: 'League Spartan', sans-serif;
+      color: $light-gray;
+    }
 
+    .mercury-active {
+      color: $text-white;
+      //TODO FIX ISSUE WITH LINK LAYERING!
+      border-bottom: 1px solid $active-blue;
+      margin-bottom: -1px;
     }
   }
 }
