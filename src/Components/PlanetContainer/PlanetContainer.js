@@ -103,7 +103,7 @@ const PlanetContainer = (props) => {
             </section>
             <section className={props.menuOpen ? "hidden" : "planet-container"}>
                 <Outlet/>
-                <div className={"info-container"}>
+                <section className={"info-container"}>
                     <div className={"info-card-container"}>
                         <div className={"info-card"}>
                             <p className={"info-title"}>ROTATION TIME</p>
@@ -122,7 +122,7 @@ const PlanetContainer = (props) => {
                             <p className={"info-text"}>{props.planetData.temperature}</p>
                         </div>
                     </div>
-                </div>
+                </section>
             </section>
         </section>
 

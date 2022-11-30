@@ -3,13 +3,13 @@ import MobileLinks from "../../MobileLinks/MobileLinks";
 
 const PlanetOverview = (props) => {
     return (
-        <div className={"planet-sub-container"}>
+        <section className={"planet-sub-container"}>
             <MobileLinks className={"mobile-link-container"} planetData={props.planetData}/>
-            <div className={"planet-image-container"}>
+            <section className={"planet-image-container"}>
                 <img className={"planet-image"} src={process.env.PUBLIC_URL + props.planetData.images.planet}
                      alt={`Image of ${props.planetData.name} overview`}/>
-            </div>
-            <div className={"planet-text-container"}>
+            </section>
+            <section className={"planet-text-container"}>
                 <div className={"planet-info-container"}>
                     <p className={"planet-name"}>{props.planetData.name.toUpperCase()}</p>
                     <p className={"planet-text"}>{props.planetData.overview.content}</p>
@@ -20,8 +20,8 @@ const PlanetOverview = (props) => {
                         alt={"source icon"}/></a></p>
                 </div>
                 <Links className={"internal-link-container"} planetData={props.planetData}/>
-            </div>
-        </div>
+            </section>
+        </section>
     )
 }
 
